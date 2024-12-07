@@ -10,8 +10,34 @@
     <link rel="stylesheet" href="assets/styles/main.css">
 </head>
 <body>
-    <Header>
-        <a href="#">Jadoo</a>
-    </Header>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="assets/icons/Logo.webp" alt="Vectot Image">
+            </div>
+            <nav>
+                <input type="checkbox" id="checked" class="checked">
+                <label for="checked">
+                    <img src="assets/icons/menu.webp" alt="">
+                </label>
+                <ul>
+                    <li><a href="index.html">Desitnations</a></li>
+                    <li><a href="">Hotels</a></li>
+                    <li><a href="#">Flights</a></li>
+                    <li><a href="#">Bookings</a></li>
+                    <li><a href="#">Login</a></li>
+                    <li class="signup"><a href="#">Sign up</a></li>
+                    <li>
+                        <form >
+                            <select name="Language" id="language">
+                                <option value="English" selected>En</option>
+                                <option value="Arabic">Ar</option>
+                            </select>
+                        </form>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 </body>
 </html>
