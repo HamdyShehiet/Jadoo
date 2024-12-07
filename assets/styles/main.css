@@ -6,3 +6,47 @@
     font-family: "Poppins", sans-serif;
     font-family: "Volkhov", serif; */
 }
+:root {
+    --white: #ffffff;
+    --black: #000000;
+    --orange-web: #f1a501;
+    --roman-silver: #84829a;
+    --jelly-bean: #df6951;
+    --iris: #4152ca;
+    --charleston-green: #212832;
+    --dark-electric-blue: #5e6282;
+    --medium-purple: #8a79df;
+    --space-cadet: #181e4b;
+    --blue-sapphire: #006380;
+    --manatee: #9ca0b0;
+    --yankees-blue: #14183e;
+}
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+body{
+    background-color:var(--white);
+}
+.container{
+    padding: 0 2rem;
+    margin: auto;
+    overflow: hidden;
+}
+@media (min-width: 1400px) {
+    .container{
+        max-width: 1320px;
+    }
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+input{
+    outline: none;
+}
+img{
+    max-width: 100%;
+}
