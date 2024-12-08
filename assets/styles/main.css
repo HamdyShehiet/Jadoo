@@ -67,6 +67,7 @@ img{
 }
 header{
     position: fixed;
+    z-index: 100;
     width: 100%;
     padding: 4rem 0;
     background-color: transparent;
@@ -118,6 +119,16 @@ header .container nav > .checked{
     display: none;
     background-color: #000000;
 }
+/* .hero{
+    position: relative;
+}
+.hero .container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #006380;
+} */
 @media (max-width:75em) {
     header .container nav label {
         display: block;
