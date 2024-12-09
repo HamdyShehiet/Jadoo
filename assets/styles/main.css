@@ -20,6 +20,7 @@
     --blue-sapphire: #006380;
     --manatee: #9ca0b0;
     --yankees-blue: #14183e;
+    --darkslateblue:#1E1D4C;
 }
 html{
     font-size: 62.5%;
@@ -196,6 +197,72 @@ header .container nav > .checked{
     right: 0;
     z-index: -1;
 }
+/* .category{
+    padding: 6rem 0;
+}
+.category .container span{
+    display: block;
+    text-align: center;
+    font-family: var(--poppins);
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: var(--dark-electric-blue);
+}
+.category .container h2{
+    margin: 2rem 0 3rem 0;
+    text-align: center;
+    font-family: var(--volkhov);
+    font-size: 5rem;
+    font-weight: 700;
+    color: var(--yankees-blue);
+}
+.category .container .services{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(22rem,1fr));
+    justify-content: center; 
+    gap: 4rem;
+    padding: 4rem 0;
+}
+.category .container .services .service{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    gap: 2rem;
+    padding: 3rem 2rem;
+}
+.category .container .services .service:nth-child(2){
+    position: relative;
+    box-shadow:  0 2px 4px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 36px;
+    background-color: var(--white);
+}
+.category .container .services .service:nth-child(2):after{
+    content: "";
+    position: absolute;
+    bottom: -30px;
+    left: -30px;
+    z-index: -1;
+    width: 100px;
+    height: 100px;
+    background: url(../images/layer.webp) no-repeat;
+    border-radius: 30px 10px;
+}
+.category .container .services .service h3{
+    font-family: var(--google-sans);
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: center;
+    color: var(--darkslateblue);
+}
+.category .container .services .service p{
+    font-family: var(--poppins);
+    font-size: 1.6rem;
+    font-weight: 500;
+    text-align: center;
+    color: var(--dark-electric-blue);
+} */
+
 @media (max-width:75em) {
     header .container nav label {
         display: block;
@@ -228,5 +295,4 @@ header .container nav > .checked{
     .hero .container .content-box{
         width: 100%;
     }
-    
 }
