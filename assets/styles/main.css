@@ -197,7 +197,7 @@ header .container nav > .checked{
     right: 0;
     z-index: -1;
 }
-/* .category{
+.category{
     padding: 6rem 0;
 }
 .category .container span{
@@ -245,7 +245,7 @@ header .container nav > .checked{
     z-index: -1;
     width: 100px;
     height: 100px;
-    background: url(../images/layer.webp) no-repeat;
+    background: url(../images/layer.webp);
     border-radius: 30px 10px;
 }
 .category .container .services .service h3{
@@ -261,8 +261,7 @@ header .container nav > .checked{
     font-weight: 500;
     text-align: center;
     color: var(--dark-electric-blue);
-} */
-
+}
 @media (max-width:75em) {
     header .container nav label {
         display: block;
