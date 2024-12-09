@@ -66,7 +66,8 @@ img{
     max-width: 100%;
 }
 header{
-    position: fixed;
+    position: sticky;
+    top: 0;
     z-index: 100;
     width: 100%;
     padding: 4rem 0;
@@ -119,16 +120,82 @@ header .container nav > .checked{
     display: none;
     background-color: #000000;
 }
-/* .hero{
-    position: relative;
-}
 .hero .container{
     display: flex;
     align-items: center;
-    justify-content: center;
     min-height: 100vh;
-    background-color: #006380;
-} */
+}
+.hero .container .content-box{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 60%;
+    padding: 2rem 0;
+}
+.hero .container .content-box p.welcome-message{
+    font-family: var(--poppins);
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--jelly-bean);
+}
+.hero .container .content-box h1{
+    line-height: 100%;
+    font-family: var(--volkhov);
+    font-size: 8.4rem;
+    font-weight: 700;
+    color: var(--space-cadet);
+}
+.hero .container .content-box h1 .enjoy{
+    display: inline-block;
+    position: relative;
+}
+.hero .container .content-box h1 .enjoy::before{
+    content: "";
+    position: absolute;
+    bottom: 8px;
+    left: 0;
+    z-index: -1;
+    width: calc(100% + 10rem);
+    height: 1rem;
+    background-image: url(../images/Decore.webp);
+}
+.hero .container .content-box p:nth-of-type(2){
+    font-family: var(--poppins);
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: var(--dark-electric-blue);
+}
+.hero .container .content-box .options{
+    display: inline-flex;
+    align-items: center;
+    gap: 4rem;
+    font-weight: 500;
+}
+.hero .container .content-box .options a.find-more{
+    padding: 1.6rem 2.6rem;
+    font-family: var(--google-sans);
+    font-size: 1.8rem;
+    border-radius: 10px;
+    background-color: var(--orange-web);
+    color: var(--white);
+}
+.hero .container .content-box .options a.paly-demo{
+    display: inline-flex;
+    align-items: center;
+    gap: 1.5rem;
+    font-family: var(--poppins);
+    font-size: 1.7rem;
+    color: var(--dark-electric-blue);
+}
+.hero .container .content-box .options a.paly-demo img{
+    border-radius: 50%;
+}
+.hero .container .image-box .blob-layer{
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+}
 @media (max-width:75em) {
     header .container nav label {
         display: block;
@@ -153,4 +220,13 @@ header .container nav > .checked{
     header .container nav ul .menu-search-box{
         width: 100%;
     }
+}
+@media (max-width:62em) {
+    .hero .container .image-box{
+        display: none;
+    }
+    .hero .container .content-box{
+        width: 100%;
+    }
+    
 }
