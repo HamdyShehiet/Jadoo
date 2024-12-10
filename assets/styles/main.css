@@ -22,6 +22,7 @@
     --yankees-blue: #14183e;
     --darkslateblue:#1E1D4C;
     --deepskyblue:#59B1E6;
+    --darkslategray:#39425D;
 }
 html{
     font-size: 62.5%;
@@ -481,14 +482,91 @@ header .container nav > .checked{
 .next-trip .container .trip .trip-content .ongoing-trip .info progress{
     width: 100%;
 }
-/* .testimonials{
-    padding: 6rem 0;
+.testimonials{
+    padding: 16rem 0;
 }
 .testimonials .container{
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    gap: 4rem 8rem;
-} */
+    gap: 6rem 2rem  ;
+    overflow: visible;
+}
+.testimonials .container .details{
+    width: 45%;
+}
+.testimonials .container .details span{
+    font-family: var(--poppins);
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+.testimonials .container .details h2{
+    margin: 2rem 0 3rem 0;
+    font-family: var(--volkhov);
+    font-size: 5rem;
+    font-weight: 700;
+    color: var(--yankees-blue);
+}
+.testimonials .container .details .slider-btns{
+    display: inline-flex;
+    align-items: center;
+    gap: 3rem;
+    margin-top: 2rem;
+}
+.testimonials .container .details .slider-btns>*{
+    width: 1.2rem;
+    height: 1.2rem;
+    border-radius: 50%;
+    background-color:var(--darkslategray);
+}
+.testimonials .container .opinions{
+    display: flex;
+    align-items: center;
+    gap: 6rem;
+}
+.testimonials .container .opinions .persons{
+    position: relative;
+}
+.testimonials .container .opinions .persons .person{
+    position: relative;
+    width: 50rem;
+    padding: 2rem;
+    font-family: var(--poppins);
+    font-size: 1.8rem;
+    font-weight: 600;
+    border-radius: 10px;
+    background-color: var(--white);
+    color: var(--dark-electric-blue);
+    box-shadow:  0 2px 4px 0 rgba(0, 0, 0, 0.15);
+}
+.testimonials .container .opinions .persons .person:nth-child(n+2){
+    position: absolute;
+    z-index: -1;
+    left: 45px;
+    bottom: -80px;
+    opacity: .95;
+}
+.testimonials .container .opinions .persons .person img{
+    position: absolute;
+    top: -45px;
+    left: -45px;
+}
+.testimonials .container .opinions .persons .person .person-details{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    margin-top: 2rem;
+}
+.testimonials .container .opinions .persons .person .person-details span:last-child{
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+.testimonials .container .opinions .up-down-btns{
+    align-self: center;
+}
+.testimonials .container .opinions .up-down-btns img:last-child{
+    margin-top: 6rem;
+}
 @media (max-width:75em) {
     header .container nav label {
         display: block;
@@ -523,6 +601,21 @@ header .container nav > .checked{
     }
     .next-trip .container .easy-fast-trip{
         width: 100%;
+    }
+    .testimonials .container .details{
+        width: 100%;
+    }
+    .testimonials .container .opinions{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 6rem;
+        /* background-color: chartreuse; */
+    }
+    .testimonials .container .opinions .persons{
+        display: grid;
+        position: relative;
+        /* background-color: #006380; */
     }
 }
 @media (max-width:48em) {
