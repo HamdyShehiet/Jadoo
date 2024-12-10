@@ -529,10 +529,10 @@ header .container nav > .checked{
 }
 .testimonials .container .opinions .persons .person{
     position: relative;
-    width: 50rem;
+    width: 45rem;
     padding: 2rem;
     font-family: var(--poppins);
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     font-weight: 600;
     border-radius: 10px;
     background-color: var(--white);
@@ -542,7 +542,7 @@ header .container nav > .checked{
 .testimonials .container .opinions .persons .person:nth-child(n+2){
     position: absolute;
     z-index: -1;
-    left: 45px;
+    left: 44px;
     bottom: -80px;
     opacity: .95;
 }
@@ -557,12 +557,17 @@ header .container nav > .checked{
     gap: .5rem;
     margin-top: 2rem;
 }
+.testimonials .container .opinions .persons .person .person-details span:first-child{
+    font-size: 1.8rem;
+    font-weight: 600;
+}
 .testimonials .container .opinions .persons .person .person-details span:last-child{
     font-size: 1.4rem;
     font-weight: 500;
 }
 .testimonials .container .opinions .up-down-btns{
-    align-self: center;
+    display: flex;
+    flex-direction: column;
 }
 .testimonials .container .opinions .up-down-btns img:last-child{
     margin-top: 6rem;
@@ -591,6 +596,9 @@ header .container nav > .checked{
     header .container nav ul .menu-search-box{
         width: 100%;
     }
+    .testimonials .container .details{
+        width: 100%;
+    }
 }
 @media (max-width:62em) {
     .hero .container .image-box{
@@ -601,21 +609,6 @@ header .container nav > .checked{
     }
     .next-trip .container .easy-fast-trip{
         width: 100%;
-    }
-    .testimonials .container .details{
-        width: 100%;
-    }
-    .testimonials .container .opinions{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 6rem;
-        /* background-color: chartreuse; */
-    }
-    .testimonials .container .opinions .persons{
-        display: grid;
-        position: relative;
-        /* background-color: #006380; */
     }
 }
 @media (max-width:48em) {
