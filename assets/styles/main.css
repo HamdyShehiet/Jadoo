@@ -218,7 +218,7 @@ header .container nav > .checked{
 }
 .category .container .services{
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(22rem,1fr));
+    grid-template-columns: repeat(auto-fit,minmax(24rem,1fr));
     justify-content: center; 
     gap: 4rem;
     padding: 4rem 0;
@@ -262,6 +262,42 @@ header .container nav > .checked{
     text-align: center;
     color: var(--dark-electric-blue);
 }
+/* .top-selling{
+    padding: 6rem 0;
+}
+.top-selling .container span{
+    display: block;
+    text-align: center;
+    font-family: var(--poppins);
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: var(--dark-electric-blue);
+}
+.top-selling .container h2{
+    margin: 2rem 0 3rem 0;
+    text-align: center;
+    font-family: var(--volkhov);
+    font-size: 5rem;
+    font-weight: 700;
+    color: var(--yankees-blue);
+}
+.top-selling .container .destinations{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    gap: 4rem;
+    padding: 4rem 0;
+    background-color: #006380;
+}
+.top-selling .container .destinations .destination{
+    width: 31.4rem;
+    background-color: brown;
+}
+.top-selling .container .destinations .destination img{
+    width: 100%;
+    height: auto;
+    background-color: #fff;
+} */
 @media (max-width:75em) {
     header .container nav label {
         display: block;
