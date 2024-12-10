@@ -328,7 +328,6 @@ header .container nav > .checked{
     font-family: var(--poppins);
     font-size: 1.6rem;
     font-weight: 500;
-
 }
 @media (max-width:75em) {
     header .container nav label {
