@@ -262,7 +262,7 @@ header .container nav > .checked{
     text-align: center;
     color: var(--dark-electric-blue);
 }
-/* .top-selling{
+.top-selling{
     padding: 6rem 0;
 }
 .top-selling .container span{
@@ -287,17 +287,49 @@ header .container nav > .checked{
     justify-content: center; 
     gap: 4rem;
     padding: 4rem 0;
-    background-color: #006380;
 }
 .top-selling .container .destinations .destination{
     width: 31.4rem;
-    background-color: brown;
+    padding-bottom: 1.5rem;
+    border-radius: 24px;
+    box-shadow:  0 2px 4px 0 rgba(0, 0, 0, 0.2);
+    background-color:var(--white);
+    color: var(--dark-electric-blue);
+}
+.top-selling .container .destinations .destination .image-box{
+    height:32.7rem;
+    overflow-y: hidden;
 }
 .top-selling .container .destinations .destination img{
     width: 100%;
     height: auto;
-    background-color: #fff;
-} */
+    border-radius: 24px;
+}
+.top-selling .container .destinations .destination .info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 2rem 1rem 2rem;
+    font-family: var(--poppins);
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+.top-selling .container .destinations .destination .days {
+    display: inline-flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 0 2rem;
+}
+.top-selling .container .destinations .destination .days img{
+    width: 2rem;
+}
+.top-selling .container .destinations .destination .days span{
+    display: inline-block;
+    font-family: var(--poppins);
+    font-size: 1.6rem;
+    font-weight: 500;
+
+}
 @media (max-width:75em) {
     header .container nav label {
         display: block;
