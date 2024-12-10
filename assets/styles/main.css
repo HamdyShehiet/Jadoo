@@ -483,13 +483,13 @@ header .container nav > .checked{
     width: 100%;
 }
 .testimonials{
-    padding: 16rem 0;
+    padding: 6rem 0;
 }
 .testimonials .container{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 6rem 2rem  ;
+    gap: 6rem  ;
     overflow: visible;
 }
 .testimonials .container .details{
@@ -521,15 +521,15 @@ header .container nav > .checked{
 }
 .testimonials .container .opinions{
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
+    justify-content: center;
     gap: 6rem;
-}
-.testimonials .container .opinions .persons{
-    position: relative;
 }
 .testimonials .container .opinions .persons .person{
     position: relative;
-    width: 45rem;
+    max-width: 45rem;
+    width: 100%;
     padding: 2rem;
     font-family: var(--poppins);
     font-size: 1.6rem;
@@ -538,13 +538,6 @@ header .container nav > .checked{
     background-color: var(--white);
     color: var(--dark-electric-blue);
     box-shadow:  0 2px 4px 0 rgba(0, 0, 0, 0.15);
-}
-.testimonials .container .opinions .persons .person:nth-child(n+2){
-    position: absolute;
-    z-index: -1;
-    left: 44px;
-    bottom: -80px;
-    opacity: .95;
 }
 .testimonials .container .opinions .persons .person img{
     position: absolute;
@@ -598,6 +591,12 @@ header .container nav > .checked{
     }
     .testimonials .container .details{
         width: 100%;
+    }
+    .testimonials .container .opinions .persons .person img{
+        position: relative;
+        top: 0;
+        left: 0;
+        margin-bottom: 1rem;
     }
 }
 @media (max-width:62em) {
