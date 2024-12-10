@@ -565,6 +565,7 @@ header .container nav > .checked{
 .testimonials .container .opinions .up-down-btns img:last-child{
     margin-top: 6rem;
 }
+/* .parteners{} */
 @media (max-width:75em) {
     header .container nav label {
         display: block;
