@@ -481,7 +481,14 @@ header .container nav > .checked{
 .next-trip .container .trip .trip-content .ongoing-trip .info progress{
     width: 100%;
 }
-
+/* .testimonials{
+    padding: 6rem 0;
+}
+.testimonials .container{
+    display: flex;
+    justify-content: center;
+    gap: 4rem 8rem;
+} */
 @media (max-width:75em) {
     header .container nav label {
         display: block;
@@ -517,6 +524,8 @@ header .container nav > .checked{
     .next-trip .container .easy-fast-trip{
         width: 100%;
     }
+}
+@media (max-width:48em) {
     .next-trip .container .trip .trip-content .ongoing-trip{
         position: static;
         bottom: 0;
