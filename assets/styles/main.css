@@ -565,7 +565,19 @@ header .container nav > .checked{
 .testimonials .container .opinions .up-down-btns img:last-child{
     margin-top: 6rem;
 }
-/* .parteners{} */
+.parteners{
+    padding: 6rem 0;
+}
+.parteners .container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+}
+.parteners .container img{
+    width: 21.1rem;
+}
 @media (max-width:75em) {
     header .container nav label {
         display: block;
