@@ -158,9 +158,9 @@ header .container nav > .checked{
     bottom: 8px;
     left: 0;
     z-index: -1;
-    width: calc(100% + 10rem);
+    width: calc(100% + 5rem);
     height: 1rem;
-    background-image: url(../images/Decore.webp);
+    background: url(../images/Decore.webp) no-repeat;
 }
 .hero .container .content-box p:nth-of-type(2){
     font-family: var(--poppins);
@@ -641,7 +641,60 @@ header .container nav > .checked{
     top: -30px;
     right: -30px;
 }
-
+footer .footer-top{
+    padding: 6rem 0;
+}
+footer .footer-top .container{
+    display: flex;
+    justify-content: center;
+    gap:3rem 2rem;
+    flex-wrap: wrap;
+}
+footer .footer-top .container .links{
+    text-align: center;
+    width: 21rem;
+    flex-grow: 1;
+    font-family: var(--poppins);
+}
+footer .footer-top .container .links .logo {
+    font-size: 4.4rem;
+    font-weight: 500;
+    color: var(--space-cadet);
+}
+footer .footer-top .container .links h3{
+    font-size: 2.1rem;
+    font-weight: 600;
+    color: var(--black);
+}
+footer .footer-top .container .links p{
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: var(--black);
+}
+footer .footer-top .container .links ul{
+    margin-top: 2rem;
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: var(--dark-electric-blue);
+}
+footer .footer-top .container .links ul li{
+    margin-bottom: 1rem;
+}
+footer .footer-top .container .links .icons{
+    display: inline-flex;
+    align-items: center;
+}
+footer .footer-top .container .links .mobile-version{
+    display: inline-flex;
+    align-items: center;
+    gap: 1rem;
+}
+footer .footer-top .container .links .icons + h3{
+    margin: 2rem 0;
+    font-size: 2rem;
+    font-weight: 500;
+    color: var(--dark-electric-blue);
+}
 @media (max-width:75em) {
     header .container nav label {
         display: block;
