@@ -175,7 +175,11 @@ section:not(.hero){
     .hero .container .content-box{
         width: 60%;
     }
-    
+}
+@media (max-width:992px) {
+    .hero .container .image-box{
+        display: none;
+    }
 }
 .hero .container .content-box p.welcome-message{
     font-family: var(--poppins);
@@ -242,10 +246,8 @@ section:not(.hero){
     right: 0;
     z-index: -1;
 }
-.category{
-    padding: 6rem 0;
-}
-.category .container span{
+.category .container >span,
+.top-selling .container >span{
     display: block;
     text-align: center;
     font-family: var(--poppins);
@@ -253,11 +255,12 @@ section:not(.hero){
     font-weight: 600;
     color: var(--dark-electric-blue);
 }
-.category .container h2{
+.category .container >h2,
+.top-selling .container >h2{
     margin: 2rem 0 3rem 0;
     text-align: center;
     font-family: var(--volkhov);
-    font-size: 5rem;
+    font-size: clamp(3.5rem,5vw,5rem);
     font-weight: 700;
     color: var(--yankees-blue);
 }
@@ -307,25 +310,6 @@ section:not(.hero){
     text-align: center;
     color: var(--dark-electric-blue);
 }
-.top-selling{
-    padding: 6rem 0;
-}
-.top-selling .container span{
-    display: block;
-    text-align: center;
-    font-family: var(--poppins);
-    font-size: 1.8rem;
-    font-weight: 600;
-    color: var(--dark-electric-blue);
-}
-.top-selling .container h2{
-    margin: 2rem 0 3rem 0;
-    text-align: center;
-    font-family: var(--volkhov);
-    font-size: 5rem;
-    font-weight: 700;
-    color: var(--yankees-blue);
-}
 .top-selling .container .destinations{
     display: flex;
     flex-wrap: wrap;
@@ -339,6 +323,7 @@ section:not(.hero){
     border-radius: 24px;
     box-shadow:  0 2px 4px 0 rgba(0, 0, 0, 0.2);
     background-color:var(--white);
+    overflow: hidden;
     color: var(--dark-electric-blue);
 }
 .top-selling .container .destinations .destination .image-box{
@@ -348,7 +333,6 @@ section:not(.hero){
 .top-selling .container .destinations .destination img{
     width: 100%;
     height: auto;
-    border-radius: 24px;
 }
 .top-selling .container .destinations .destination .info{
     display: flex;
@@ -364,15 +348,12 @@ section:not(.hero){
     align-items: center;
     gap: 1rem;
     padding: 0 2rem;
-}
-.top-selling .container .destinations .destination .days img{
-    width: 2rem;
-}
-.top-selling .container .destinations .destination .days span{
-    display: inline-block;
     font-family: var(--poppins);
     font-size: 1.6rem;
     font-weight: 500;
+}
+.top-selling .container .destinations .destination .days img{
+    width: 2rem;
 }
 .next-trip{
     padding: 6rem 0;
@@ -760,12 +741,6 @@ footer .footer-top .container .links .icons + h3{
     }
 }
 @media (max-width:62em) {
-    .hero .container .image-box{
-        display: none;
-    }
-    .hero .container .content-box{
-        width: 100%;
-    }
     .next-trip .container .easy-fast-trip{
         width: 100%;
     }
