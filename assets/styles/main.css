@@ -35,7 +35,6 @@ body{
 .container{
     padding: 0 1.5rem;
     margin: auto;
-    overflow: hidden;
 }
 @media (min-width: 768px) {
     .container {
@@ -579,16 +578,21 @@ header .container nav > .checked{
 .parteners .container img{
     width: 16.2rem;
 }
-/* .subscribe{
+.subscribe{
     padding: 6rem 0;
+}
+.subscribe .container{
+    overflow: visible;
 }
 .subscribe .container .form-box{
     position: relative;
-    width: 100%;
-    background-color: var(--lavender);
+    padding: 4rem;
     border-radius: 129px 20px 20px 20px ;
+    opacity: 80%;
+    background-color: var(--lavender);
 }
 .subscribe .container .form-box p{
+    padding: 0 1rem;
     text-align: center;
     font-family: var(--poppins);
     font-size: 3.3rem;
@@ -598,12 +602,12 @@ header .container nav > .checked{
 .subscribe .container .form-box form{
     display: flex;
     align-items: center;
-    padding: 4rem;
 }
 .subscribe .container .form-box form{
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 2rem;
     margin-top: 4rem;
 }
@@ -611,15 +615,32 @@ header .container nav > .checked{
     display: flex;
     align-items: center;
     gap: 1rem;
+    width: 42.1rem;
     padding: 2rem;
     border-radius: 10px;
     background-color: var(--white);
 }
-.subscribe .container .form-box form .email-field input{
+.subscribe .container .form-box form input{
     border: none;
     outline: none;
+}
+.subscribe .container .form-box form .email-field input[type="email"]{
     background-color: transparent;
-} */
+}
+.subscribe .container .form-box form  input[type="submit"]{
+    padding:1.7rem 4rem;
+    font-family: var(--google-sans);
+    font-size: 1.7rem;
+    font-weight: 600;
+    border-radius: 10px;
+    background-color: var(--jelly-bean);
+    color: var(--white);
+}
+.subscribe .container .form-box >img{
+    position: absolute;
+    top: -30px;
+    right: -30px;
+}
 
 @media (max-width:75em) {
     header .container nav label {
