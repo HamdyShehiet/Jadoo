@@ -24,6 +24,7 @@
     --deepskyblue:#59B1E6;
     --darkslategray:#39425D;
     --lavender:#DFD7F9;
+    --dimgray:#6F727B;
 }
 html{
     font-size: 62.5%;
@@ -675,7 +676,7 @@ footer .footer-top .container .links ul{
     margin-top: 2rem;
     font-size: 1.8rem;
     font-weight: 500;
-    color: var(--dark-electric-blue);
+    color: var(--dimgray);
 }
 footer .footer-top .container .links ul li{
     margin-bottom: 1rem;
