@@ -63,7 +63,9 @@ ul{
 a{
     text-decoration: none;
 }
-input{
+input,
+select{
+    border: none;
     outline: none;
 }
 img{
@@ -73,7 +75,6 @@ header{
     position: sticky;
     top: 0;
     z-index: 100;
-    width: 100%;
     padding: 4rem 0;
     background-color: transparent;
 }
@@ -82,47 +83,79 @@ header .container{
     align-items: center;
     justify-content: space-between;
 }
-header .container a img{
-    width: 11rem;
-}
-header .container nav ul{
-    display: flex;
-    align-items: center;
-    gap: 4rem;
-    list-style: none;
-}
-header .container nav ul a{
+header .container .logo a{
     display: inline-block;
-    font-family:var(--volkhov); 
-    font-size: 1.7rem;
-    font-weight: 400;
-    color: var(--black);
-    text-decoration: none;
 }
-header .container nav ul li.signup{
-    display: inline-block;
-    padding:1rem 2rem;
-    border: 1px solid var(--charleston-green);
-    border-radius: 5px;
+@media (max-width:991px) {
+    header .container nav{
+        position: relative;
+    }
+    header .container nav ul{
+        display: none;
+        position: absolute;
+        top: 75px;
+        right: 0;
+        width: 24rem;
+        padding: 1rem;
+        text-align: center;
+        background-color: var(--lavender);
+        border-radius: 8px;
+        transition: all .4s ease;
+    }
+    header .container nav ul li a{
+        display: block;
+        margin-top: 2rem;
+        font-family:var(--google-sans); 
+        font-size: 1.7rem;
+        font-weight: 500;
+        color: var(--black);
+    }
+    header .container nav ul li form select{
+        margin-top: 2rem;
+        font-family:var(--volkhov); 
+        font-size: 1.7rem;
+        font-weight: 400;
+        background-color: transparent;
+        color: var(--black);
+    }
+    header .container nav > .checked:checked ~ ul{
+        display: block;
+    }
+    header .container nav > .checked{
+        visibility: hidden;
+    } 
+    
 }
-header .container nav ul li form select{
-    font-family:var(--volkhov); 
-    font-size: 1.7rem;
-    font-weight: 400;
-    border: none;
-    outline: none;
-    background-color: transparent;
-    color: var(--black);
-}
-header .container nav label{
-    display: none;
-}
-header .container nav label img{
-    width: 2.6rem;
-}
-header .container nav > .checked{
-    display: none;
-    background-color: #000000;
+@media (min-width:992px) {
+    header .container nav > .checked,
+    header .container nav label{
+        display: none;
+    }
+    header .container nav ul{
+        display: flex;
+        align-items: center;
+        gap: 4rem;
+        list-style: none;
+    }
+    header .container nav ul li a{
+        display: block;
+        font-family:var(--google-sans); 
+        font-size: 1.7rem;
+        font-weight: 500;
+        color: var(--black);
+    }
+    header .container nav ul li.signup{
+        padding:1rem 2rem;
+        border: 1px solid var(--charleston-green);
+        border-radius: 5px;
+    }
+    header .container nav ul li form select{
+        font-family:var(--volkhov); 
+        font-size: 1.7rem;
+        font-weight: 400;
+        background-color: transparent;
+        color: var(--black);
+    }
 }
 .hero .container{
     display: flex;
@@ -159,7 +192,7 @@ header .container nav > .checked{
     bottom: 8px;
     left: 0;
     z-index: -1;
-    width: calc(100% + 5rem);
+    width: calc(100% + 3rem);
     height: 1rem;
     background: url(../images/Decore.webp) no-repeat;
 }
@@ -170,7 +203,8 @@ header .container nav > .checked{
     color: var(--dark-electric-blue);
 }
 .hero .container .content-box .options{
-    display: inline-flex;
+    display: flex;
+    flex-wrap: wrap;
     align-items: center;
     gap: 4rem;
     font-weight: 500;
@@ -707,29 +741,6 @@ footer .footer-top .container .links .icons + h3{
     color: var(--dark-electric-blue);
 }
 @media (max-width:75em) {
-    header .container nav label {
-        display: block;
-    }
-    header .container nav ul{
-        display: none;
-        flex-direction: column;
-        gap: 2rem;
-        position: absolute;
-        top: 80px;
-        right: -100%;
-        width: 50%;
-        padding: 1rem;
-        background-color: var(--manatee);
-        border-radius: 8px;
-        transition: all .4s ease;
-    }
-    header .container nav > .checked:checked ~ ul{
-        display: flex;
-        right: 0;
-    }
-    header .container nav ul .menu-search-box{
-        width: 100%;
-    }
     .testimonials .container .details{
         width: 100%;
     }
