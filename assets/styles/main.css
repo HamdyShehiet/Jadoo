@@ -157,6 +157,9 @@ header .container .logo a{
         color: var(--black);
     }
 }
+section:not(.hero){
+    padding: 6rem 0;
+}
 .hero .container{
     display: flex;
     align-items: center;
@@ -166,8 +169,13 @@ header .container .logo a{
     display: flex;
     flex-direction: column;
     gap: 2rem;
-    width: 60%;
-    padding: 2rem 0;
+    overflow: hidden;
+}
+@media (min-width:992px) {
+    .hero .container .content-box{
+        width: 60%;
+    }
+    
 }
 .hero .container .content-box p.welcome-message{
     font-family: var(--poppins);
@@ -178,7 +186,7 @@ header .container .logo a{
 .hero .container .content-box h1{
     line-height: 100%;
     font-family: var(--volkhov);
-    font-size: 8.4rem;
+    font-size: clamp(6rem,10vw,8.4rem);
     font-weight: 700;
     color: var(--space-cadet);
 }
