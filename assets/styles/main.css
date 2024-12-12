@@ -355,19 +355,17 @@ section:not(.hero){
 .top-selling .container .destinations .destination .days img{
     width: 2rem;
 }
-.next-trip{
-    padding: 6rem 0;
-}
 .next-trip .container{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     gap:4rem 8rem;
-    overflow: visible;
 }
-.next-trip .container .easy-fast-trip{
-    width: 45%;
+@media (min-width:992px) {
+    .next-trip .container .easy-fast-trip{
+        width: 45%;
+    }
 }
 .next-trip .container .easy-fast-trip >span{
     font-family: var(--poppins);
@@ -377,7 +375,7 @@ section:not(.hero){
 .next-trip .container .easy-fast-trip h2{
     margin: 2rem 0 3rem 0;
     font-family: var(--volkhov);
-    font-size: 5rem;
+    font-size: clamp(3.5rem,5vw,5rem);
     font-weight: 700;
     color: var(--yankees-blue);
 }
@@ -389,21 +387,16 @@ section:not(.hero){
     display: flex;
     align-items: center;
     gap: 1.5rem;
-}
-.next-trip .container .easy-fast-trip .steps .step h3{
     font-family: var(--poppins);
     font-size: 1.6rem;
+}
+.next-trip .container .easy-fast-trip .steps .step h3{
     font-weight: 700;
     color: var(--dark-electric-blue);
 }
 .next-trip .container .easy-fast-trip .steps .step p{
-    font-family: var(--poppins);
-    font-size: 1.6rem;
     font-weight: 400;
     color: var(--dark-electric-blue);
-}
-.next-trip .container .trip{
-    padding: 4rem 2rem 2rem 2rem;
 }
 .next-trip .container .trip .trip-content{
     display: flex;
@@ -412,14 +405,14 @@ section:not(.hero){
     position: relative;
     padding: 2rem;
     border-radius: 26px;
-    box-shadow:  0 2px 4px 0 rgba(0, 0, 0, 0.2);
+    box-shadow:  0 2px 4px 0 rgba(0, 0, 0, 0.1);
     background-color: var(--white);
+    font-family: var(--poppins);
 }
 .next-trip .container .trip .trip-content >img{
     border-radius: 26px;
 }
 .next-trip .container .trip .trip-content h3{
-    font-family: var(--poppins);
     font-size: 1.8rem;
     font-weight: 500;
     color: var(--black);
@@ -428,7 +421,6 @@ section:not(.hero){
     display: inline-flex;
     align-items: center;
     gap: .5rem;
-    font-family: var(--poppins);
     font-size: 1.5rem;
     font-weight: 500;
     color: var(--dark-electric-blue);
@@ -442,7 +434,6 @@ section:not(.hero){
     display: flex;
     align-items: center;
     justify-content: space-between;
-    font-family: var(--poppins);
     font-size: 1.6rem;
     font-weight: 500;
     color: var(--dark-electric-blue);
@@ -475,26 +466,21 @@ section:not(.hero){
     flex-direction: column;
     gap: 1rem;
     width: 100%;
+    font-weight: 500;
 }
 .next-trip .container .trip .trip-content .ongoing-trip .info span{
-    font-family: var(--poppins);
     font-size: 1.4rem;
-    font-weight: 500;
     color: var(--roman-silver);
     
 }
 .next-trip .container .trip .trip-content .ongoing-trip .info h4{
-    font-family: var(--poppins);
     font-size: 1.8rem;
-    font-weight: 500;    
 }
 .next-trip .container .trip .trip-content .ongoing-trip .info .rate-completed{
     display: flex;
     align-items: center;
     gap: 0.6rem;
-    font-family: var(--poppins);
     font-size: 1.4rem;
-    font-weight: 500;
     color: var(--black) ;
 }
 .next-trip .container .trip .trip-content .ongoing-trip .info .rate-completed span:first-child{
@@ -505,6 +491,15 @@ section:not(.hero){
 }
 .next-trip .container .trip .trip-content .ongoing-trip .info progress{
     width: 100%;
+}
+@media (max-width:768px) {
+    .next-trip .container .trip .trip-content .ongoing-trip{
+        position: static;
+        width: 100%;
+        border-radius: initial;
+        box-shadow:  initial;
+        padding: initial;
+    }
 }
 .testimonials{
     padding: 6rem 0;
@@ -743,16 +738,5 @@ footer .footer-top .container .links .icons + h3{
 @media (max-width:62em) {
     .next-trip .container .easy-fast-trip{
         width: 100%;
-    }
-}
-@media (max-width:48em) {
-    .next-trip .container .trip .trip-content .ongoing-trip{
-        position: static;
-        bottom: 0;
-        right: 0;
-        width: 100%;
-        border-radius: 0;
-        box-shadow:  initial;
-        padding: 0;
     }
 }
