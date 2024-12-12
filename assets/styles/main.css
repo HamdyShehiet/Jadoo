@@ -23,6 +23,7 @@
     --darkslateblue:#1E1D4C;
     --deepskyblue:#59B1E6;
     --darkslategray:#39425D;
+    --lavender:#DFD7F9;
 }
 html{
     font-size: 62.5%;
@@ -578,6 +579,48 @@ header .container nav > .checked{
 .parteners .container img{
     width: 16.2rem;
 }
+/* .subscribe{
+    padding: 6rem 0;
+}
+.subscribe .container .form-box{
+    position: relative;
+    width: 100%;
+    background-color: var(--lavender);
+    border-radius: 129px 20px 20px 20px ;
+}
+.subscribe .container .form-box p{
+    text-align: center;
+    font-family: var(--poppins);
+    font-size: 3.3rem;
+    font-weight: 600;
+    color: var(--yankees-blue);
+}
+.subscribe .container .form-box form{
+    display: flex;
+    align-items: center;
+    padding: 4rem;
+}
+.subscribe .container .form-box form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 4rem;
+}
+.subscribe .container .form-box form .email-field{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 2rem;
+    border-radius: 10px;
+    background-color: var(--white);
+}
+.subscribe .container .form-box form .email-field input{
+    border: none;
+    outline: none;
+    background-color: transparent;
+} */
+
 @media (max-width:75em) {
     header .container nav label {
         display: block;
