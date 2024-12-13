@@ -367,12 +367,14 @@ section:not(.hero){
         width: 45%;
     }
 }
-.next-trip .container .easy-fast-trip >span{
+.next-trip .container .easy-fast-trip >span,
+.testimonials .container .details >span{
     font-family: var(--poppins);
     font-size: 1.8rem;
     font-weight: 600;
 }
-.next-trip .container .easy-fast-trip h2{
+.next-trip .container .easy-fast-trip h2,
+.testimonials .container .details h2{
     margin: 2rem 0 3rem 0;
     font-family: var(--volkhov);
     font-size: clamp(3.5rem,5vw,5rem);
@@ -501,30 +503,16 @@ section:not(.hero){
         padding: initial;
     }
 }
-.testimonials{
-    padding: 6rem 0;
-}
 .testimonials .container{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 6rem  ;
-    overflow: visible;
+    gap: 7rem ;
 }
-.testimonials .container .details{
-    width: 45%;
-}
-.testimonials .container .details span{
-    font-family: var(--poppins);
-    font-size: 1.8rem;
-    font-weight: 600;
-}
-.testimonials .container .details h2{
-    margin: 2rem 0 3rem 0;
-    font-family: var(--volkhov);
-    font-size: 5rem;
-    font-weight: 700;
-    color: var(--yankees-blue);
+@media (min-width:1200px) {
+    .testimonials .container .details{
+        width: 45%;
+    }
 }
 .testimonials .container .details .slider-btns{
     display: inline-flex;
@@ -540,23 +528,21 @@ section:not(.hero){
 }
 .testimonials .container .opinions{
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    gap: 6rem;
+    gap: 4rem;
 }
 .testimonials .container .opinions .persons .person{
     position: relative;
     max-width: 45rem;
-    width: 100%;
-    padding: 2rem;
+    padding: 3rem 2rem;
     font-family: var(--poppins);
     font-size: 1.6rem;
     font-weight: 600;
     border-radius: 10px;
+    box-shadow:  0 2px 4px 0 rgba(0, 0, 0, 0.15);
     background-color: var(--white);
     color: var(--dark-electric-blue);
-    box-shadow:  0 2px 4px 0 rgba(0, 0, 0, 0.15);
 }
 .testimonials .container .opinions .persons .person img{
     position: absolute;
@@ -580,9 +566,7 @@ section:not(.hero){
 .testimonials .container .opinions .up-down-btns{
     display: flex;
     flex-direction: column;
-}
-.testimonials .container .opinions .up-down-btns img:last-child{
-    margin-top: 6rem;
+    gap: 6rem;
 }
 .parteners{
     padding: 6rem 0;
@@ -725,18 +709,13 @@ footer .footer-top .container .links .icons + h3{
     color: var(--dark-electric-blue);
 }
 @media (max-width:75em) {
-    .testimonials .container .details{
+    /* .testimonials .container .details{
         width: 100%;
-    }
+    } */
     .testimonials .container .opinions .persons .person img{
         position: relative;
         top: 0;
         left: 0;
         margin-bottom: 1rem;
-    }
-}
-@media (max-width:62em) {
-    .next-trip .container .easy-fast-trip{
-        width: 100%;
     }
 }
